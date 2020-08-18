@@ -8,6 +8,6 @@ COPY . web
 
 WORKDIR web
 
-RUN bundle install                                                                                                                          
+RUN bundle update && bundle install                                                                                                                          
 
 CMD bundle exec jekyll serve
