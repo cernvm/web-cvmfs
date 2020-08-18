@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,700;0,800;0,900;1,400;1,500;1,700&display=swap');
+
+$dark-gradient-top: #2C6781;
+$dark-gradient-bottom: #3B83B8;
+
+// $light-gradient-top: #F58F8F;
+// $light-gradient-bottom: #EDAA96;
+$light-gradient-top: #EDCB96;
+$light-gradient-bottom: #EDA796;
+
+$main-color: #373F51;
+
+$secondary-color: #EDAA96;
+
+$font: 'Montserrat', sans-serif;
+
+@mixin gradient-dark {
+  background: linear-gradient(-25deg, rgba(255,255,255,0.05) 10%, rgba(255,255,255,0.03) 0% 20%, rgba(255,255,255,0.02) 0% 30%, transparent 30%), linear-gradient(to top, $dark-gradient-bottom, $dark-gradient-top);
+}
+
+@mixin gradient-light {
+  background: linear-gradient(25deg,rgba(255, 255, 255, 0.15) 10%, rgba(255, 255, 255, 0.1) 0% 20%, rgba(255, 255, 255, 0.05) 0% 30%, transparent 30%), linear-gradient(to top, $light-gradient-bottom, $light-gradient-top);
+}

@@ -1,0 +1,22 @@
+<section class="news">
+  <h2>NEWS</h2>
+  <div class="container">
+    {% for news in site.posts %}
+    <div class='news'>
+        <div class='news-date'>
+            {{ news.date | date: "%d/%m/%Y" }} 
+        </div>
+        <div class='news-title'>
+            <a href="{{site.baseurl}}{{ news.url }}">{{ news.title }}</a>
+        </div>
+        <div class='news-preview'>
+            {{ news.excerpt }}
+        </div>
+        <div class='read-more'>
+            <a href="{{site.baseurl}}{{ news.url }}">Read more...</a>
+        </div>
+    </div>
+    {% endfor %}
+  </div>
+</section>
+

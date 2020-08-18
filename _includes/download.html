@@ -1,0 +1,97 @@
+<section class="download" id="download">
+  <h2>DOWNLOAD</h2>
+  <div class="container h-scroll">
+	<h4>CernVM-FS Package Repositories</h4>
+
+		<p><strong>yum</strong></p>
+		<a href="http://cvmrepo.web.cern.ch/cvmrepo/yum" target="_blank">http://cvmrepo.web.cern.ch/cvmrepo/yum</a>
+
+		<p>In order to add the yum repository, run: </p>
+		<pre><code>sudo yum install https://ecsft.cern.ch/dist/cvmfs/cvmfs-release/cvmfs-release-latest.noarch.rpm</code></pre>
+
+		<p><strong>apt</strong></p>
+		<a href="http://cvmrepo.web.cern.ch/cvmrepo/apt" target="_blank">http://cvmrepo.web.cern.ch/cvmrepo/apt</a>
+
+		<p>In order to add the apt repository, run: </p>
+		<pre><code>sudo apt-get install lsb-release
+wget https://ecsft.cern.ch/dist/cvmfs/cvmfs-release/cvmfs-release-latest_all.deb
+sudo dpkg -i cvmfs-release-latest_all.deb
+rm -f cvmfs-release-latest_all.deb
+sudo apt-get update</code></pre>
+					
+		</br>
+		</br>
+
+		<h3>CernVM-FS Core Packages</h3>
+
+		<ul class="tabs">
+			<li class="tab-link active" data-tab="client"><strong>Client</strong></li>
+			<li class="tab-link" data-tab="server"><strong>Server</strong></li>
+			<li class="tab-link" data-tab="libcvmfs"><strong>libcvmfs</strong></li>
+		</ul>
+
+		<div id="client" class="tab-content active">
+			{% include download-client.html %}
+		</div>
+		
+		<div id="server" class="tab-content">
+			{% include download-server.html %}			
+		</div>
+		
+		<div id="libcvmfs" class="tab-content">
+			{% include download-libcvmfs.html %}
+		</div>
+
+
+		<h4>CernVM-FS Config Packages</h4>
+		<p><a href="https://ecsft.cern.ch/dist/cvmfs/cvmfs-config">https://ecsft.cern.ch/dist/cvmfs/cvmfs-config</a></p>
+		</br>
+
+		<h4>CernVM-FS Nagios Check for Clients</h4>
+		<p><a href="https://ecsft.cern.ch/dist/cvmfs/check_cvmfs.sh">check_cvmfs_1.10.sh</a></p>
+		</br>
+
+		<h4></a>SL6 Kernel with aufs</h4>
+		<p><a href="https://ecsft.cern.ch/dist/cvmfs/kernel">https://ecsft.cern.ch/dist/cvmfs/kernel</a></p>
+		</br>
+
+		<h4>Cache Preloader for HPC Systems</h4>
+		<p><a href="https://cvmrepo.web.cern.ch/cvmrepo/preload">https://cvmrepo.web.cern.ch/cvmrepo/preload</a></p>
+		</br>
+
+		<h4>Shrinkwrap Packages</h4>
+		<p><a href="https://ecsft.cern.ch/dist/cvmfs/cvmfs-2.7.3">https://ecsft.cern.ch/dist/cvmfs/cvmfs-2.7.3</a></p>
+		</br>
+
+		<h4></a>Technology Previews</h4>
+		<p><a href="http://cvmrepo.web.cern.ch/cvmrepo/yum/cvmfs-testing/EL/7/ppc64le/">Power8 RPMs</a></p>
+		</br>
+
+		<h4></a>Nightly Builds</h4>
+		<p><a href="https://ecsft.cern.ch/dist/cvmfs/nightlies">https://ecsft.cern.ch/dist/cvmfs/nightlies</a></p>
+		</br>
+
+		<h4></a>Sources</h4>
+		<table class='download-table'>
+			<tbody>
+				<tr>
+					<td width="20%"><img alt="github" src="/sites/cernvm.web.cern.ch/files/github.png" style="width: 24px; height: 24px;" /></td>
+					<td><a href="https://github.com/cvmfs">GitHub repository</a></td>
+				</tr>
+				<tr>
+					<td width="20%"><img alt="source tarball" src="/sites/cernvm.web.cern.ch/files/package.png" style="width: 21px; height: 24px;" /></td>
+					<td><a href="https://ecsft.cern.ch/dist/cvmfs/cvmfs-2.7.3/source.tar.gz">Source tarball</a></td>
+				</tr>
+				<tr>
+					<td width="20%"><img alt="rpm" src="/sites/cernvm.web.cern.ch/files/rpm.png" style="width: 41px; height: 24px;" /></td>
+					<td><a href="https://ecsft.cern.ch/dist/cvmfs/cvmfs-2.7.3/cvmfs-2.7.3-1.el6.src.rpm">Source RPM</a></td>
+				</tr>
+				<tr>
+					<td width="20%"><img alt="doxygen" src="/sites/cernvm.web.cern.ch/files/sourcecode.png" style="width: 55px; height: 24px;" /></td>
+					<td><a href="https://ecsft.cern.ch/dist/cvmfs/doc/latest/">Doxygen documentation</a></td>
+				</tr>
+			</tbody>
+		</table>
+
+  </div>
+</section>
