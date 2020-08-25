@@ -3,15 +3,15 @@
     <h2>NEWS</h2>
     <div class="container">
       <div class="slider">
-        {% for news in site.posts limit:4 %} 
+        {% for news in site.posts limit:4 %}
           <div class="slide">
             <div class="top">
               <a href='{{site.baseurl}}{{ news.url }}' class="title">{{ news.title }}</a>
               <p class="date">{{ news.date | date: "%d/%m/%Y" }}</p>
             </div>
-            <p>{{ news.excerpt }}</p> 
+            <p>{{ news.excerpt }}</p>
           </div>
-        {% endfor %}        
+        {% endfor %}
       </div>
       <div class='btn btn--outline'><a href="news.html">Go to News</a></div>
     </div>
@@ -28,22 +28,17 @@
           <a href="mailto:cvmfs-testing@cern.ch">cvmfs-testing@cern.ch</a>
         </div>
         <div class="link icon-email-at">
-          <p>Discussion on CernVM:</p>
-          <a href="mailto:cernvm-talk@cern.ch">cernvm-talk@cern.ch</a>
-
-        </div>
-        <div class="link icon-email-at">
-          <p>Disscussion on CernVM-FS:</p>
+          <p>Discussion on CernVM-FS:</p>
           <a href="mailto:cvmfs-talk@cern.ch">cvmfs-talk@cern.ch</a>
         </div>
         <div class="text">
           <p>
-            The mailing lists are managed through CERN egroups and open for self registration.  Users without a CERN account can register a lightweight account to login to the egroups page.
+            The mailing lists are managed through CERN egroups and open for self registration.  Users without a CERN account can <a href="https://account.cern.ch/account/Externals/">register a lightweight account</a> to login to the egroups page.
           </p>
           <p>
-            For CernVM-FS bug reports, please attach a "bugreport tarball", which is created with cvmfs_config bugreport.
+            For CernVM-FS bug reports, please attach a "bugreport tarball", which is created with <code>cvmfs_config bugreport</code>.
           </p>
         </div>
       </div>
   </section>
-</footer> 
+</footer>
