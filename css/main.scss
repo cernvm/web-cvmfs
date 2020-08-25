@@ -497,6 +497,25 @@ section.download{
   .h-scroll{
     overflow-x: auto;
   }
+
+  .download-sources{
+    display: flex;
+    justify-content: space-evenly;
+
+    span{
+      text-align: center;
+      
+      img{
+        width: 64px;
+      }
+
+      a{
+        display:block;
+        width: 100%;
+        text-align: center;
+      }
+    }
+  }
 }
 /////////////////////////////////////////////////////////
 
