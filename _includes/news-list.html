@@ -4,7 +4,7 @@
     {% for news in site.posts %}
     <div class='news'>
         <div class='news-date'>
-            {{ news.date | date: "%d/%m/%Y" }} 
+            {{ news.date | date: "%d.%m.%Y" }}
         </div>
         <div class='news-title'>
             <a href="{{site.baseurl}}{{ news.url }}">{{ news.title }}</a>
