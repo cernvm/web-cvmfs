@@ -556,10 +556,11 @@ section.news{
             margin-bottom: 20px;
             display: inline-block;
             width: 70%;
+            color: $main-color;
             
-            &:hover{
-              text-decoration: underline;
-            }
+            // &:hover{
+            //   text-decoration: underline;
+            // }
           }
 
           .date{
@@ -718,7 +719,7 @@ body.news-list-page{
           padding: 20px 0 10px;
         }
 
-        .news-title a {
+        .news-title span {
           font-size: 24px;
           font-weight: 600;
           color: $secondary-color;
@@ -727,13 +728,13 @@ body.news-list-page{
           padding-bottom: 10px;
           transition: color .1s ease-in-out;
 
-          &:hover{
-            color:$main-color;
-          }
+          // &:hover{
+          //   color:$main-color;
+          // }
         }
 
         .news-preview {
-          padding: 8px 0;
+          padding: 8px 0 20px;
         }
 
         .read-more a {

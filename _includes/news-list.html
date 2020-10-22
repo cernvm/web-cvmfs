@@ -7,14 +7,14 @@
             {{ news.date | date: "%d.%m.%Y" }}
         </div>
         <div class='news-title'>
-            <a href="{{site.baseurl}}{{ news.url }}">{{ news.title }}</a>
+            <span>{{ news.title }}</span>
         </div>
         <div class='news-preview'>
             {{ news.excerpt }}
         </div>
-        <div class='read-more'>
+        <!-- <div class='read-more'>
             <a href="{{site.baseurl}}{{ news.url }}">Read more...</a>
-        </div>
+        </div> -->
     </div>
     {% endfor %}
   </div>
