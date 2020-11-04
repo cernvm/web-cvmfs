@@ -1,0 +1,140 @@
+@media all and (max-width:1400px){
+  nav.menu{
+    padding: 0px 20px;
+  }
+}
+
+@media all and (max-width:1024px){
+  header{
+    .container{
+      .page-title{
+        h1{
+          font-size: 70px;
+        }
+      }
+    }
+  }
+
+  section{
+    padding: 40px;
+    
+    &.news{
+      padding: 150px 40px 50px;
+      
+      .container .slider .slide{
+        .top{
+          .title, .date{
+            font-size: 20px;
+            width: 100%;
+            text-align: left;
+            margin-bottom: 10px;
+          }        
+        }
+
+        p{
+          max-width: 100%;
+        }
+      }
+    }
+
+    &.download{
+      .container{
+        padding: 15px;
+      }
+    }
+  }  
+}
+
+@media all and (max-width:768px){
+  header{
+    padding: 120px 0 60px;
+
+    .container{
+      >div{
+        width: 0;
+        display: block;
+      }
+
+      .page-title{
+        width: 100%;
+        max-width: 500px;
+        padding: 0 15px;
+        margin: auto;
+      }
+    }
+  }
+
+  section{
+    &.download{
+      table.download-table{
+        min-width: 600px;
+      }
+
+      .container .tab-content .tab-row{
+        .row-links{
+          ul{
+            width: 100%;
+          }
+        }
+      }
+    }
+
+    &.support{
+      .container{
+        .link{
+          display: block;
+          width: 100%;
+          max-width: 380px;
+          margin: auto;
+          margin-bottom: 30px;
+        }
+      }
+    }
+  }
+
+  body.news-list-page section.news .container{
+    padding: 25px;
+  }
+}
+
+@media all and (max-width:425px){
+  header{
+    .container{
+      .page-title{
+        h1{
+          font-size: 60px;
+          padding-bottom: 30px;
+          text-align: center;
+        }
+      }
+    }
+  }
+
+  section{
+    padding: 25px 15px;
+
+    &.download{
+      .container{
+        padding: 10px;
+      }
+
+      .container .tab-content .tab-row{
+        .vendor-logo{
+          display: none;
+        }
+      }
+
+      .download-sources{
+        flex-wrap: wrap;
+        span{
+          min-width: 170px;
+          margin-bottom: 25px;
+        }
+      }
+    }
+
+    &.news{
+      padding: 100px 15px 50px;
+    }
+  }
+}

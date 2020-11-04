@@ -57,6 +57,14 @@ $('a[href*="#"]')
 		$("#"+tab_id).addClass('active');
   })
   
+  if($(window).width() <= 1024){
+    $(".menu--inner >ul").addClass("mobile");
+
+    $( ".hamburger" ).click(function() {
+      $(".menu--inner >ul").toggleClass("open");
+    });
+  }
+
 });
 
 $(window).scroll(function() {    
@@ -68,3 +76,12 @@ $(window).scroll(function() {
       $("nav.menu").removeClass("transparent");
   }
 });
+
+$(window).resize(function() {
+  if($( window ).width() <= 1024){
+    $(".menu--inner >ul").addClass("mobile");
+  }else{
+    $(".menu--inner >ul").removeClass("mobile");
+    $(".menu--inner >ul").removeClass("open");
+  }
+})
