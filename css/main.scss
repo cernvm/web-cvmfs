@@ -131,9 +131,9 @@ nav.menu{
       }
     }
   }
-  
+
   div.menu--inner{
-    max-width: 1366px;    
+    max-width: 1366px;
     margin: auto;
   }
 
@@ -198,7 +198,7 @@ nav.menu{
         -o-transform-origin: left center;
         transform-origin: left center;
       }
-    
+
       span:nth-child(2) {
         top: 11px;
         -webkit-transform-origin: left center;
@@ -206,7 +206,7 @@ nav.menu{
         -o-transform-origin: left center;
         transform-origin: left center;
       }
-    
+
       span:nth-child(3) {
         top: 22px;
         -webkit-transform-origin: left center;
@@ -280,13 +280,13 @@ nav.menu{
               background: white;
               transition: all .15s ease-in-out;
             }
-    
+
             &:hover:before{
               width: 100%
             }
           }
         }
-        
+
         &:hover{
           visibility: visible;
           opacity: 1;
@@ -307,7 +307,7 @@ nav.menu{
       .hamburger{
         display: block;
       }
-      
+
       li .dropdown-content{
         visibility: visible;
         opacity: 1;
@@ -351,12 +351,12 @@ nav.menu{
           transform: rotate(45deg);
           left: 4px;
         }
-      
+
         span:nth-child(2) {
           width: 0%;
           opacity: 0;
         }
-      
+
         span:nth-child(3) {
           -webkit-transform: rotate(-45deg);
           -moz-transform: rotate(-45deg);
@@ -448,8 +448,8 @@ header {
 
         &.icon-github{
           a::before{
-           background-image:url('../images/github.png'); 
-          }          
+           background-image:url('../images/github.png');
+          }
         }
       }
     }
@@ -495,7 +495,7 @@ section.download{
       font-size: 24px;
       margin-bottom: 20px;
     }
-    
+
     h4{
       font-size: 20px;
       margin-bottom: 10px;
@@ -509,7 +509,7 @@ section.download{
 			margin: 0px;
 			padding: 0px;
       list-style: none;
-      
+
       li{
         background: none;
         color: #222;
@@ -529,7 +529,7 @@ section.download{
 			background: rgba($color: #fff, $alpha: 0.5);
       padding: 20px;
       margin-bottom: 40px;
-      
+
       &.active{
         display: inherit;
       }
@@ -556,7 +556,7 @@ section.download{
             &.fluid{
               width: 100%;
             }
-            
+
             *{
               font-size: 14px;
             }
@@ -574,7 +574,7 @@ section.download{
       }
 		}
 
-    
+
     table.download-table{
       width: 100%;
       table-layout: fixed;
@@ -586,7 +586,7 @@ section.download{
       }
 
       th{
-        border-bottom: 1px solid rgba(255, 255, 255, 0.7);     
+        border-bottom: 1px solid rgba(255, 255, 255, 0.7);
         padding-bottom: 20px;
 
         img{
@@ -605,17 +605,17 @@ section.download{
           }
         }
       }
-      
+
       tbody{
         tr{
           td{
-            border-bottom: 1px solid rgba(255, 255, 255, 0.7);            
+            border-bottom: 1px solid rgba(255, 255, 255, 0.7);
             padding: 8px 0;
 
             a{
               padding: 5px 0;
-              display: inline-block;  
-              font-size: 14px;    
+              display: inline-block;
+              font-size: 14px;
             }
 
             img{
@@ -626,7 +626,7 @@ section.download{
       }
     }
   }
-  
+
   .h-scroll{
     overflow-x: auto;
   }
@@ -637,7 +637,7 @@ section.download{
 
     span{
       text-align: center;
-      
+
       img{
         width: 64px;
       }
@@ -656,7 +656,7 @@ section.download{
 
 section.news{
   padding: 150px 0 50px;
-  
+
   h2{
     color: white;
     text-align: right;
@@ -678,7 +678,7 @@ section.news{
       .slide{
         background: linear-gradient(to top, $light-gradient-bottom, $light-gradient-top);
         padding: 30px;
-        
+
         .top{
           font-size: 0;
 
@@ -690,7 +690,7 @@ section.news{
             display: inline-block;
             width: 70%;
             color: $main-color;
-            
+
             // &:hover{
             //   text-decoration: underline;
             // }
@@ -818,6 +818,13 @@ section.support{
         background-repeat: no-repeat;
         background-position: center;
       }
+
+      &.icon-discourse::after{
+        background-image: url('../images/discourse.png');
+        background-size: 60%;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
     }
 
     .text{
@@ -837,11 +844,11 @@ body.news-list-page{
   min-height: 100vh;
 
   section.news{
-    
+
     .container{
       background-color: white;
       border-radius: 5px;
-      padding: 30px 50px;  
+      padding: 30px 50px;
 
       .news{
         border-bottom: 2px solid #38485b33;
